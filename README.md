@@ -1,4 +1,3 @@
-
 🎬 ALL Movies — Your Movie Playground
 =================================
 
@@ -6,6 +5,15 @@ Welcome! 🎉
 
 ALL Movies is a friendly, fast, and focused movie UI.
 Packed with neat UI pieces, smooth navigation, and ✨ delightful UX.
+
+## 📸 Screenshots
+
+### Web View
+![Web View](./desktop.png)
+
+### App View
+![App View](./mobile.png)
+
 
 🌐 Live Website
 ----------------
