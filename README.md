@@ -1,19 +1,31 @@
 
-🎬 MovieHub — Your Movie Playground
+🎬 ALL Movies — Your Movie Playground
 =================================
 
 Welcome! 🎉
 
-MovieHub is a friendly, fast, and focused movie UI.
+ALL Movies is a friendly, fast, and focused movie UI.
 Packed with neat UI pieces, smooth navigation, and ✨ delightful UX.
 
-Why MovieHub
+🌐 Live Website
+----------------
+
+🔗 **[https://all-movies-sayan.vercel.app/](https://all-movies-sayan.vercel.app/)**
+
+📌 Original Repository
+-----------------------
+
+This project is forked from the original **MovieHub** repository by **Harsh**:
+
+🔗 **[https://github.com/harshstrr/MovieHub](https://github.com/harshstrr/MovieHub)**
+
+Why ALL Movies
 -----------
 
 - ❤️ Designed for movie lovers
 - ⚡ Snappy interactions
 - 📱 Works great on mobile & desktop
-- 🎨 Clean, modern look
+- 🎨 Premium dark theme with glassmorphism & animations
 
 Top Features
 ------------
@@ -30,7 +42,8 @@ What you'll see
 - Nice card grid for titles
 - Detail pages with poster + meta
 - Responsive navbar
-- Tiny animations for polish
+- Micro-animations for polish
+- Dark mode with gradient accents
 
 Tech Stack
 ----------
@@ -94,7 +107,7 @@ Styling & Theme
 
 - Tailwind gives utility classes
 - Bootstrap used for helpers & grid
-- Theme toggles supported (light/dark)
+- Premium dark theme with glassmorphism effects
 
 Accessibility
 -------------
@@ -124,11 +137,10 @@ Code Style
 - Small functions > big ones
 - Keep CSS scoped to components
 
-Deployment Ideas
+Deployment
 ----------------
 
-- Host static files on any CDN
-- Netlify / Vercel / static hosters work great
+- Deployed on **Vercel**: [https://all-movies-sayan.vercel.app/](https://all-movies-sayan.vercel.app/)
 
 Troubleshooting
 ---------------
@@ -146,7 +158,8 @@ Roadmap
 Credits
 -------
 
-- Built with care by the MovieHub crew
+- Original project by [Harsh](https://github.com/harshstrr/MovieHub)
+- Forked & redesigned by Sayan Pal
 
 Contact
 -------
@@ -158,6 +171,6 @@ License
 
 - MIT — share & enjoy
 
-Thanks for checking out MovieHub! 🍿
+Thanks for checking out ALL Movies! 🍿
 
 Enjoy exploring and improving it — happy coding! 💫
