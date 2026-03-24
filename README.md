@@ -11,8 +11,8 @@ Packed with neat UI pieces, smooth navigation, and ✨ delightful UX.
 ### Web View
 ![Web View](./desktop.png)
 
-### App View
-![App View](./mobile.png)
+### Mobile View
+![Mobile View](./mobile.png)
 
 
 🌐 Live Website
@@ -177,8 +177,8 @@ Contact
 License
 -------
 
-- MIT — share & enjoy
+- MIT -
 
 Thanks for checking out ALL Movies! 🍿
 
-Enjoy exploring and improving it — happy coding! 💫
+
