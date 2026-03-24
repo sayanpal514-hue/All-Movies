@@ -1,5 +1,5 @@
-trend{
-    height: 1rem;
+trend {
+  height: 1rem;
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -7,4 +7,50 @@ trend{
 .no-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+/* ====== Section Animations ====== */
+.px-6 {
+  animation: fadeInUp 0.6s ease-out both;
+}
+.px-6:nth-child(2) { animation-delay: 0.1s; }
+.px-6:nth-child(3) { animation-delay: 0.2s; }
+.px-6:nth-child(4) { animation-delay: 0.3s; }
+.px-6:nth-child(5) { animation-delay: 0.4s; }
+.px-6:nth-child(6) { animation-delay: 0.5s; }
+.px-6:nth-child(7) { animation-delay: 0.6s; }
+
+/* ====== Scroll container fade edges ====== */
+.relative > .overflow-x-auto {
+  mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
+}
+
+/* ====== Trending Number Cards ====== */
+h3.text-zinc-400 {
+  color: rgba(229, 9, 20, 0.15) !important;
+  text-shadow: 0 0 40px rgba(229, 9, 20, 0.05);
+}
+
+/* Section heading styles */
+li.font-semibold {
+  color: var(--text-primary);
+  list-style: none;
+}
+
+/* ====== Scroll Buttons ====== */
+button.hidden.md\\:flex {
+  background: rgba(229, 9, 20, 0.7) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  transition: all 0.3s ease;
+}
+button.hidden.md\\:flex:hover {
+  background: rgba(229, 9, 20, 0.9) !important;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.3);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }

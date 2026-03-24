@@ -3,7 +3,7 @@
     Only For PC View
 </div> -->
 
-<div class="lg:container-fluid flex flex-col ">
+<div class="lg:container-fluid flex flex-col bg-[#0a0a0f] min-h-screen">
     <app-navbar></app-navbar>
 
     <ul>
@@ -16,8 +16,8 @@
     <ng-container *ngIf="loading; else content">
         <div class="min-h-screen flex items-center justify-center">
             <div class="text-center">
-                <div class="spinner-border text-danger mb-3" role="status"></div>
-                <p class="text-sm text-muted">Loading...</p>
+                <div class="spinner-border text-[#e50914] mb-3" role="status"></div>
+                <p class="text-sm text-[#6b6b80]">Loading...</p>
             </div>
         </div>
     </ng-container>
@@ -56,7 +56,7 @@
       absolute
       left-0
       
-      text-zinc-400
+      text-[rgba(229,9,20,0.2)]
       text-[6rem]
       overflow-hidden
       sm:text-[15rem]
@@ -74,7 +74,7 @@
     top-0
     z-10
     cursor-pointer
-    bg-[#f1f1f1]
+    bg-[#1a1a2e]
     rounded-md
     shadow-sm
     overflow-hidden
@@ -115,12 +115,12 @@
           font-medium
           leading-snug
           line-clamp-2
-          text-black
+          text-[#f0f0f0]
         ">
                                             {{ item.title || item.name }}
                                         </h6>
 
-                                        <p class="text-xs text-dark-emphasis line-clamp-1">
+                                        <p class="text-xs text-[#6b6b80] line-clamp-1">
                                             {{ item.categories }}
                                         </p>
                                     </div>

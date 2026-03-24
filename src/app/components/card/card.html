@@ -1,9 +1,9 @@
 <div
   class="
     cursor-pointer
-    bg-[#f1f1f1]
-    rounded-md
-    shadow-sm
+    bg-[#1a1a2e]
+    rounded-xl
+    shadow-lg
     overflow-hidden
     flex flex-col
     w-[11rem]
@@ -12,6 +12,8 @@
     h-[22rem]
     sm:h-[24rem]
     lg:h-[24rem]
+    border border-white/[0.08]
+    transition-all duration-300
   "
 >
   <!-- IMAGE (locked height) -->
@@ -58,10 +60,10 @@
       class="
         text-[0.90rem]
         sm:text-[1rem]
-        font-medium
+        font-semibold
         leading-snug
         line-clamp-2
-        text-black
+        text-[#f0f0f0]
       "
     >
       {{ item.title || item.name }}
@@ -71,7 +73,7 @@
       class="
         h-[3rem] overflow-hidden
         text-xs
-        text-dark-emphasis m-0
+        text-[#6b6b80] m-0
       "
     >
       {{ item.categories }}

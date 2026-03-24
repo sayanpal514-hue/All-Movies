@@ -1,18 +1,69 @@
-.form-control:focus {
-  border-color: #dc3545;              /* Bootstrap danger red */
-  box-shadow: 0 0 0 0.2rem rgba(209, 59, 74, 0.452);
-} 
-a{
-    color: #000;
-    text-decoration: none;
+/* ====== Navbar ====== */
+nav {
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.3s ease;
+}
 
- } 
- a:hover{
-    color: #dc3545;
-    text-decoration: underline;
+/* ====== Brand Logo ====== */
+.navbar-brand h2 {
+  transition: all 0.3s ease;
+}
+.navbar-brand:hover h2 {
+  filter: brightness(1.2);
+}
 
- }
+/* ====== Nav Links ====== */
+a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
 
+/* Desktop nav link underline effect */
+.d-none.d-md-flex ul li a {
+  position: relative;
+  padding-bottom: 4px;
+}
+.d-none.d-md-flex ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+.d-none.d-md-flex ul li a:hover::after {
+  width: 100%;
+}
+
+/* ====== Search ====== */
+.btn.bg-danger {
+  background: var(--accent-gradient) !important;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+.btn.bg-danger:hover {
+  transform: scale(0.97);
+  box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+/* ====== Mobile Menu ====== */
 .mobile-nav {
   list-style: none;
   padding: 0;
@@ -20,40 +71,78 @@ a{
 }
 
 .nav-item {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--glass-border);
 }
 
-.nav-link {
-  padding: 1rem;
+.nav-line {
+  cursor: pointer;
+  padding: 0.75rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
+  color: var(--text-primary);
+  font-weight: 500;
 }
 
 .submenu {
   list-style: none;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
-  background: #f9f9f9;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
 }
 
 .submenu.show {
-  max-height: 400px; 
+  max-height: 400px;
 }
 
 .submenu li a {
   display: block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.6rem 1.2rem;
   text-decoration: none;
-  color: #333;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  border-radius: 6px;
+}
+.submenu li a:hover {
+  color: var(--accent);
+  background: rgba(229, 9, 20, 0.08);
 }
 
 .arrow {
   transition: transform 0.3s ease;
+  color: var(--accent);
 }
 
 .arrow.open {
   transform: rotate(180deg);
+}
+
+/* ====== Genres Overlay ====== */
+.bg-white.shadow-xl {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+.bg-white.shadow-xl ul li a {
+  color: var(--text-secondary);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+.bg-white.shadow-xl ul li a:hover {
+  background: rgba(229, 9, 20, 0.1) !important;
+  color: var(--accent) !important;
+}
+
+/* ====== Mobile hamburger ====== */
+button[data-bs-toggle="offcanvas"] {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: var(--text-primary);
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+}
+button[data-bs-toggle="offcanvas"]:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
 }

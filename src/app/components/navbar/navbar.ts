@@ -11,7 +11,7 @@ import { ConnectedPosition, OverlayModule } from '@angular/cdk/overlay';
   styleUrl: './navbar.css',
 })
 export class Navbar implements OnInit {
-  title = ['Movie','Hub'];
+  title = ['ALL','Movies'];
   searchQuery = '';
   results: any[] = [];
   genres = [

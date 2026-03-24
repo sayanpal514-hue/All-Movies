@@ -1,0 +1,42 @@
+/* ====== Movie Card ====== */
+:host {
+  display: block;
+}
+
+:host > div {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--glass-border);
+  border-radius: 12px !important;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+:host > div:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(229, 9, 20, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(229, 9, 20, 0.1);
+}
+
+/* Image overlay gradient */
+:host > div .relative::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, var(--bg-card), transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Card text colors */
+h6 {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+}
+
+p {
+  color: var(--text-muted) !important;
+}

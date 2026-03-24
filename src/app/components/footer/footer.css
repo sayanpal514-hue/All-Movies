@@ -1,6 +1,32 @@
-li{
-    display: block;
-    border-radius: 25px;
-    border: 1px solid #b6b6b6; 
-    background: #ffffff;
+/* ====== Footer ====== */
+:host {
+  display: block;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--glass-border);
+  background: var(--bg-card);
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  border-color: var(--accent);
+  background: rgba(229, 9, 20, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(229, 9, 20, 0.15);
+}
+
+li svg path,
+li svg circle {
+  fill: var(--text-secondary);
+  transition: fill 0.3s ease;
+}
+
+li:hover svg path,
+li:hover svg circle {
+  fill: var(--accent);
 }
